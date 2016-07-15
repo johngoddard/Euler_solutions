@@ -32,7 +32,7 @@ class EulerSolver
         break
       end
     end
-
+    
     return n
   end
 
