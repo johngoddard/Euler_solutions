@@ -29,10 +29,9 @@ class EulerSolver
     (2...(n ** (0.5)).ceil).to_a.each do |i|
       if n % i == 0
         return largest_prime(n/i)
-        break
       end
     end
-    
+
     return n
   end
 
@@ -42,6 +41,3 @@ e = EulerSolver.new
 p e.largest_prime(600851475143)
 # 1471 6857
 #p e.sum_even_fibs_below(4000000)
-
-# git filter-branch -f --env-filter "GIT_AUTHOR_NAME='Michael Parlato'; GIT_AUTHOR_EMAIL='michaelvparlato@gmail.com'; GIT_COMMITTER_NAME='Michael Parlato
-# '; GIT_COMMITTER_EMAIL='michaelvparlato@gmail.com';" HEAD
